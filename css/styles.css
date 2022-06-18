@@ -154,14 +154,22 @@ h1,h2,h3,p,ul{
 
 /* hero index*/
 .hero{
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgimage/hero.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-position: 50% 50%; */
+    /* background-size: cover; */
+    background-color: var(--dark-bgc);
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--dark-bgc);
     text-align: center;
+    margin: 0 auto;
 }
 .hero-title{
     margin-left: 237px;
     margin-right: 237px;
+    margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -169,7 +177,6 @@ h1,h2,h3,p,ul{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-bgc-color);
-    margin-bottom: 30px;
 }
 .hero-button{
     font-family: inherit;
