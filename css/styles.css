@@ -302,13 +302,9 @@ h1,h2,h3,p,ul{
     text-align: center;
     padding: 6px 22px;
 }
-.filter-button:hover,
-.filter-button:focus{
-    color: var(--text-bgc-color);
-    background-color: var(--text-secondary-color);
-}
 /* current активные предложения */
-.filter-button:current{
+.filter-button.current:hover,
+.filter-button.current:focus{
     color: var(--text-bgc-color);
     background-color: var(--text-secondary-color);
 }
@@ -345,7 +341,7 @@ h1,h2,h3,p,ul{
  /* FOOTER */
 .footer{
     background-color: var(--dark-bgc);
-    padding: 60px;
+    padding: 60px 0;
 }
 .footer-address {
     line-height: 1.7;
