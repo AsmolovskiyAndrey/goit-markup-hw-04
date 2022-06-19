@@ -121,6 +121,20 @@ h1,h2,h3,p,ul{
     color: var(--text-secondary-color)
 }
 /* adress header */
+.letter::before {
+    content: "";
+    background-image: url(../images/svg-index/mail.svg);
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.phone::before{
+    content: "";
+    background-image: url(../images/svg-index/phone.svg);
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
 .adress.list{
     display: flex;
     margin-left: auto;
@@ -131,6 +145,7 @@ h1,h2,h3,p,ul{
 }
 .adress-link.link{
     display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -200,6 +215,28 @@ h1,h2,h3,p,ul{
 }
 
 /* benefits index*/
+.benefits-li::before{
+    content: '';
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--light-bgc);
+    background-image: url(../images/svg-index/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.benefits-li:nth-child(2)::before{
+    background-image: url(../images/svg-index/clock.svg);
+}
+.benefits-li:nth-child(3)::before {
+    background-image: url(../images/svg-index/diagram.svg);
+}
+.benefits-li:nth-child(4)::before {
+    background-image: url(../images/svg-index/astronaut.svg);
+}
+.benefits-li{
+    width: 270px;
+}
 .benefits-title{
     margin-bottom: 10px;
 
@@ -241,6 +278,14 @@ h1,h2,h3,p,ul{
     padding-top: 0;
 }
 /* team index */
+.team-info::after{
+    content: '';
+    display: inline-block;
+    width: 206px;
+    height: 44px;
+    margin-top: 16px;
+    background-color: tomato;
+}
 .team-info{
     padding-top: 30px;
     padding-bottom: 30px;
